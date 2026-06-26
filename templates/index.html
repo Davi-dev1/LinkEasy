@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+        <link rel="icon" type="image/png" href="/static/logositemeu.png">
+    <title>LinkEasy - Seu baixador local e confiável</title>
+</head>
+<body>
+
+       <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/sobre">Sobre</a>
+        <a href="/contato">Contato</a>
+    </div>
+
+<div class="seletor-tipo">
+                <button class="botao-seletor activite">Baixar Música</button>
+               <a href="/baixar_video" ><button class="botao-seletor activite">Baixar Vídeo </button> </a>
+            </div>
+
+
+
+<div class="tudo">
+
+     <div class="logo">
+        <img src="/static/logositemeu.png" alt="Logo do LinkEasy">
+    </div>
+
+    <div class="container">
+    <h1>LinkEasy - Seu baixador local e confiável</h1>
+    <p>Bem-vindo ao LinkEasy, seu baixador de músicas do YouTube!</p>
+    <h2>Após usar muitos sites para  fazer dowloads de músicas e vídeos do YouTube, decidi criar um para mim mesmo,  você pode usar este baixador local e confiável, só basta baixar as dependências em seu computador!</h2>
+    </div>
+
+    <h1 id="titulo"> Cole o link do vídeo do YouTube e baixe sua música por aqui :</h1>
+
+    <div class="form">
+        <form action="/baixar" method="post">
+            <input type="text" name="url" placeholder="Cole o link do vídeo do YouTube aqui">
+            <button type="submit">Baixar Música</button>
+        </form>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2026 LinkEasy. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
