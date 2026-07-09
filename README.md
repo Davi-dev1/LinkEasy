@@ -28,3 +28,9 @@ A versão do Interpretador Python instalada em meu pc
 # Flask
 Após instalar o interpretador Python agora é necessário baixar as bibliotecas para que os códigos possam funcionar, sendo assim precisamos utilizar o terminal de seu editor de texto ou utilize o powershel , o primeiro comando que deve ser feito em seu computador é este : <strong><code><i>pip install Flask</i></code></strong><br>
 Em suma o flask é um framework do python em que é possível criar aplicações web com python é uma ótima opção para criar chat-bots ou criar outras soluções com python.
+
+# Bibliotecas 
+Após certificar que em sua máquina esteja instalada o Flask agora é hora de instalar as bibliotecas que farão com que seja possível os downloads de músicas e vídeos em sua máquina , entre eles estão : <strong><code><i>yt_dlp</i></code></strong> , esta biblioteca é a responsável por gerenciar todo o sistema de instalação de arquivos de músicas em seu dispositivo via links que ela for submetida. Para efetuar esta instalação , vá ao terminal do seu editor de texto e digite : <strong><code><i>C:\python313\python.exe -m pip install yt-dlp</i></code></strong>
+  <img src="image-1.png" alt="Descrição da imagem" width="30" align="center"> Importante: a versão do python em meu pc é a python313 atente para qual é a sua pois se for diferente ela deve ser informada depois do <strong><code><i>C:\ --versaodopythoninstalada--\</strong></code></i>
+
+  Agora temos dois arquivos principais que devem ser utilizados pois é por meio deles que você consegue baixar um vídeo do youtube ou uma música a partir do link informado são eles : <strong><code><i>ffmpeg-dowloader</strong></code></i> e o <strong><code><i>ffprobe.exe</strong></code></i>
