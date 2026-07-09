@@ -1,0 +1,77 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color:cornflowerblue ; 
+    margin: 0 auto;
+    padding: 20px;
+}
+.botao-seletor {
+    color: #fff;
+    margin: 0 10px;
+    background-color:#007BFF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    color: black;
+}
+h2{
+    text-align: center;
+    color: #333;
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+form input {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+     width: 100%;
+     font-family: 'Arial', sans-serif;
+     font-weight: bold;
+}
+form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 140px;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+.logo img {
+    
+    margin-bottom: 20px;
+    width: 200px;
+    height: auto;
+    align-items: center;
+    margin:0 auto;
+    
+    
+
+
+}
+.tudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}  
+/* essa classe ai "tudo" é a mágica da responsividade */
