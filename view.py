@@ -1,3 +1,5 @@
+import os
+
 from flask import render_template, request, jsonify, send_file
 
 # se precisar de adicionar mais bibliotecas, adicione aqui nessas linhas
@@ -13,14 +15,18 @@ def index():
 
 @bp.route('/baixar', methods=['POST'])
 def baixar():
+   
     url = request.form.get('url')
     if not url:
         return jsonify({'error': 'URL do vídeo não fornecida'}), 400
 
     try:
-        # chama a função de baixar música e recebe o nome do arquivo mp3 passando a url
-        nome_arquivo_mp3 = baixar_musica(url)
-        return send_file(nome_arquivo_mp3, as_attachment=True)
+        # chama a função de baixar música e recebe o nome do arquivo mp3  passando a url
+        detalhes = baixar_musica(url)
+        caminho_arquivo = detalhes['caminho']
+
+        return send_file(caminho_arquivo, as_attachment=True,download_name=os.path.basename(caminho_arquivo),mimetype='audio/mpeg'
+        )
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
@@ -38,6 +44,7 @@ def baixar_video():
     try:
         # chama a função de baixar vídeo e recebe o nome do arquivo mp4 passando a url
         nome_arquivo_video = processar_dowload_video(url)
-        return send_file(nome_arquivo_video, as_attachment=True)
+        return send_file(nome_arquivo_video, as_attachment=True, download_name=os.path.basename(nome_arquivo_video), mimetype='video/mp4'
+         )
     except Exception as e:
         return jsonify({'error': str(e)}), 500
